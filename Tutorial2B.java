@@ -56,11 +56,12 @@ public class Tutorial2B {
   // determine if an integer is unique
   public static boolean isNumUnique(int currentNum, int currentIntCount, int[] currentIntList) {
     boolean newUnique = false;
+
     for (int j = 0; j < currentIntCount; j++) {
       if (currentIntList[j] == currentNum) { //no action if integer is duplicated
         newUnique = false;
+        break;
       } 
-
       if (j == (currentIntCount - 1)) {
         newUnique = true;
       }
